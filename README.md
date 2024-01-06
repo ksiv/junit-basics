@@ -29,13 +29,19 @@ One can easily put in dependencies in pom.xml and it will work.
 
 
 But it's best to understand what is inside if something goes not well.  
-You need two components: ENGINE and API.
+You need two components: ENGINE and API. 
+For parameterized tests you need one more component: Params 
 
-API - is responsible for test editing so you can use the @Annotations in your IDE.
+Compilation dependencies:
+API - provides basic annotations such as @Test, @BeforeEach, @AfterEach etc
 
-ENGINE - is a runtime it is responsible for tets execution.
+PARAMS - provides annotations to work with parameterized test such as: @ValueSource, @EnumSource, @MethodSource etc. 
+
+ENGINE - is a runtime it is responsible for test execution.
+
 
 In case you use Maven for test execution you need a Maven plugin called Surefire.
+
 !!! Check the last version compatible
 
             <plugin>
@@ -45,6 +51,7 @@ In case you use Maven for test execution you need a Maven plugin called Surefire
             </plugin>
 			
 In case you plan to use @Suite annotation you need again two components for it
+
 !!! Check the versions again
         <dependency>
             <groupId>org.junit.platform</groupId>

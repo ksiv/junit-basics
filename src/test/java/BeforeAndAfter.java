@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
  * */
 
 class BeforeAndAfter {
-
+    // Fixture
     @BeforeAll
     static void initAll() {
         System.out.println("this step is executed before all tests...");
@@ -16,6 +16,7 @@ class BeforeAndAfter {
         System.out.println("this step is executed before each test...");
     }
 
+    // tests
     @Test
     @DisplayName("Test 1 canonical name")
     void test1() {
@@ -28,10 +29,7 @@ class BeforeAndAfter {
         System.out.println("test 2");
     }
 
-
-
-
-
+    // TearDown
     @AfterEach
     void tearDown() {
         System.out.println("this step is executed after each test...");
