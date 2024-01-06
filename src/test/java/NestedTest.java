@@ -18,12 +18,12 @@ class NestedTest {
 
     @Test
     void testOne() {
-        System.out.println("test one");
+        System.out.println("test one.L1");
     }
 
     @Test
     void testTwo() {
-        System.out.println("test two");
+        System.out.println("test two.L1");
     }
 
     @Nested
@@ -42,12 +42,12 @@ class NestedTest {
 
         @Test
         void testOne() {
-            System.out.println("nested test one ");
+            System.out.println("test one.L2 ");
         }
 
         @Test
         void testTwo() {
-            System.out.println("nested test two");
+            System.out.println("test two.L2");
         }
     }
 }

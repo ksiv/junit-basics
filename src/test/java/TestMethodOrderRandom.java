@@ -2,9 +2,7 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-// Be careful, these test would run if you comment out @TestMethodOrder
-// but this directive determines which ordering method to use.
-// So, do not forget it
+
 @TestMethodOrder(MethodOrderer.Random.class)
 
 public class TestMethodOrderRandom {

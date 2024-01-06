@@ -43,17 +43,37 @@ public class Assetions {
         });
     }
 
-    // this example is still can be written using an assert
-    // but sometime if the logic is complicated and you can not split your test into several
-    // this is a way to fail a test on such conditions
-    // 
+    // unexpected branching
+    // modern programmers do not like switches but it
+    // shows a way where fail() seems fit
     @Test
     @DisplayName("testFail()")
     void testFail() {
-        int age = 3;
-        boolean isAnAdult = true;
-        if (age<18 && isAnAdult){
-            fail("in this example country adult age starts from 18");
+        String selector = "C";
+        switch (selector) {
+            case "A":
+                // handle option 1
+                break;
+            case "B":
+                // handle option 2
+                break;
+                // ... other cases ...
+            default:
+                fail("passed non-implemented selector: "+selector);
         }
     }
+
+    // Another practice of failing non implemented test stub
+    @Test
+    @DisplayName("New button to earn more money")
+    void testNewFeature() {
+            fail("test not implemented");
+
+            // TODO
+            // 1. step one
+            // 2. step two
+            // 3. step ....
+
+    }
+
 }
