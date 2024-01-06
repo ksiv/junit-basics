@@ -10,6 +10,8 @@
         <junit.jupiter.api.version>5.10.1</junit.jupiter.api.version>
         <junit.jupiter.engine.version>5.10.1</junit.jupiter.engine.version>
         <junit.jupiter.params.version>5.10.1</junit.jupiter.params.version>
+        <junit.platform.suit.api.version>1.10.1</junit.platform.suit.api.version>
+        <junit.platform.suit.engine.version>1.10.1</junit.platform.suit.engine.version>
 
     </properties>
     <build>
@@ -69,20 +71,20 @@
             <version>5.3.1</version>
             <scope>test</scope>
         </dependency>
-        <!--  You only need this for tests annotated with @Suite-->
+        <!--  ↓↓↓ You only need this for tests annotated with @Suite-->
         <!--  !!! version 1.10.1 is important! will not work with 1.8.2-->
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-suite-api</artifactId>
-            <version>1.10.1</version>
+            <version>${junit.platform.suit.api.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-suite-engine</artifactId>
-            <version>1.10.1</version>
+            <version>${junit.platform.suit.engine.version}</version>
             <scope>test</scope>
         </dependency>
-        <!--  ^^^ You only need this for tests annotated with @Suite-->
+        <!--  ↑↑↑ You only need this for tests annotated with @Suite-->
     </dependencies>
 </project>
