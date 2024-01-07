@@ -8,7 +8,7 @@ Tested on
 - Java: jdk-11.0.14.101-openj9
 
 JUnit 5 has different syntax from JUnit 4
-This project is about JUnit5 
+This project uses JUnit5 
 - implementation :org.junit.jupiter 5.10.1 
 
 This document describes only configuration, the tests are self-describing.
