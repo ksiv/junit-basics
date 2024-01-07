@@ -1,8 +1,7 @@
 # JUnit-cheatsheet
 
 This is a set of JUnit tests describing the main JUnit features.
-Implemented in a form of maven project. In general this is not a good idea to run your tests using Maven.
-But so many people do....suit KISS strategy
+Implemented in a form of maven project. (https://maven.apache.org/) 
 
 Tested on
 - Maven version: Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
