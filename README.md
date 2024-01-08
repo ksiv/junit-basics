@@ -4,7 +4,7 @@ This is a set of JUnit tests describing the main JUnit features.
 Implemented in a form of maven project. (https://maven.apache.org/) 
 The project is properly configured.
 
-#####For whom this mini guide is intended
+##### For whom this mini guide is intended
 Starter test engineer who has some issues setting it up
 
 Tested on
