@@ -81,9 +81,9 @@ Sometime there is not any messages so you can not understand what you do wrong.
 ### using docker
 1. pull latest maven image
     `docker pull maven`   
-2. interactively runs container based on this image and executes command shell inside
+2. interactively run container based on this image and execute a command shell inside
     `docker run -it --name my-maven-container maven bash`
-3. changes active directory to one of the active user (default 'root')    
+3. changes the active directory to one of the current user     
     `cd`
 4. Download this repo:
     `git clone https://github.com/ksiv/junit-cheatsheet.git`
@@ -95,8 +95,7 @@ Sometime there is not any messages so you can not understand what you do wrong.
 
 This one is easy if you do not have any issues with internet connection like firewall.
 
-If you have an IDE you might get into trouble as they might have their own build-in versions
-of Maven and their own issues connecting to repositories.
+
 
 ## Possible issues
 1. you have not included all dependencies or have not configured them 
