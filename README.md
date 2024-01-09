@@ -83,7 +83,7 @@ Sometime there is not any messages so you can not understand what you do wrong.
     `docker pull maven`   
 2. interactively runs container based on this image and executes command shell inside
     `docker run -it --name my-maven-container maven bash`
-3. changes active directory to one of active user (default 'root')    
+3. changes active directory to one of the active user (default 'root')    
     `cd`
 4. 
     `git clone https://github.com/ksiv/junit-cheatsheet.git`
