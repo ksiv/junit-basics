@@ -78,6 +78,21 @@ Sometime there is not any messages so you can not understand what you do wrong.
 
 ## Execution 
 
+### using docker
+1. pull latest maven image
+    `docker pull maven`   
+2. interactively runs container based on this image and executes command shell inside
+    `docker run -it --name my-maven-container maven bash`
+3. changes active directory to one of active user (default 'root')    
+    `cd`
+4. 
+    `git clone https://github.com/ksiv/junit-cheatsheet.git`
+5. go to 'junit-cheatsheet' folder
+    `cd junit-cheatsheet`
+5. run the tests
+    ` mvn clean test`
+
+
 This one is easy if you do not have any issues with internet connection like firewall.
 `mvn clean test` should download all the dependencies and run your tests.
 
