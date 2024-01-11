@@ -8,8 +8,12 @@ The project is properly configured.
 A test engineer who has some issues setting it up JUnit5 using Maven.
 
 Tested on
+(Windwows)
 - Maven version: Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
 - Java: jdk-11.0.14.101-openj9
+(docker maven latest)
+- Apache Maven 3.9.6 (bc0240f3c744dd6b6ec2920b3cd08dcc295161ae)
+  
 
 JUnit 5 has different syntax from JUnit 4
 This project uses JUnit5 
