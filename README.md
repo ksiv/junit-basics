@@ -37,7 +37,7 @@ One can easily put in aggregator dependencies in pom.xml and it will work.
         </dependency>
 
 
-Although, it's best to understand what is inside if something goes not well.  
+Although, it's best to understand what is inside if something goes wrong.  
 You need two basic components: ENGINE and API. 
 For parameterized tests you need one more component: Params 
 
@@ -51,8 +51,6 @@ ENGINE - is a runtime it is responsible for test execution.
 
 In case you use Maven for test execution you need a Maven plugin called Surefire.
 
-!!! Check the last version compatible
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -61,7 +59,6 @@ In case you use Maven for test execution you need a Maven plugin called Surefire
 			
 In case you plan to use @Suite annotation you need again two components for it
 
-!!! Check the versions again
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-suite-api</artifactId>
@@ -79,7 +76,8 @@ If something does not work - check if a newer version is available first.
 
 
 the error messages you ll get in these cases unfortunately not very clear.
-Sometime there is not any messages so you can not understand what you do wrong.
+Sometime there is not any messages so you can not understand what you do wrong that is why this project is set up so you could compare it with your configuration 
+
 
 
 ## Execution 
